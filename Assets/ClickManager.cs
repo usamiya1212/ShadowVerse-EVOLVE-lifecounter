@@ -11,7 +11,7 @@ public class ClickManager : MonoBehaviour
   //変数を1増やす関数を作成
   public Text countText;
   public Text UseText;
-  public void PushButton(){
+  public void PushButton(){//最大PPを増加させる
     count++;
     //増えた数字をテキストで表示
     if(count > 10){
@@ -19,7 +19,7 @@ public class ClickManager : MonoBehaviour
     }
     countText.text="MAX PP :"+ count;
   }
-  public void MaxReset(){
+  public void MaxReset(){//ターンのリセット（最大PP増加と使用可能PPのリセット）
     count++;
     if(count >10){
       count = 10;
@@ -31,7 +31,7 @@ public class ClickManager : MonoBehaviour
   }
   //テキストを表示
 
-public void USEPPBotton(){
+public void USEPPBotton(){//PPの使用
 
   if(use == 0){
   tmp = count;
@@ -43,29 +43,18 @@ public void USEPPBotton(){
   }
   UseText.text="PP :"+tmp;
 }
- public void curePPBotton(){
+ public void curePPBotton(){//使用可能PPの回復
    tmp++;
    if(tmp >count){
      tmp=count;
    }
    UseText.text="PP :"+tmp;
  }
- public void AllReset(){
+ public void AllReset(){//ゲームのリセット
    count = 0;
    use = 0;
    tmp=0;
    countText.text="MAX PP :"+count;
    UseText.text="PP :"+count;
  }
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }

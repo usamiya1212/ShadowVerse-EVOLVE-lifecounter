@@ -1,4 +1,4 @@
-# ShadowVerse EVOLBE自作ライフカウンター 
+# ShadowVerse EVOLVE自作ライフカウンター 
 SHADOWVERSEEVOLVE用ライフカウンターです。
 
 公式アプリが配信される前に作成した自作品です。
